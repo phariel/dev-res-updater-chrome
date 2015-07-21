@@ -1,0 +1,1 @@
+# dev-res-updater-chrome
