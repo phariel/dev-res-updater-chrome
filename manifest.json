@@ -1,0 +1,26 @@
+{
+  "name": "Resources Updater",
+  "version": "0.1.0",
+  "manifest_version": 2,
+  "description": "For dev",
+  "icons": {
+    "128": "img/icon_128.png",
+    "48": "img/icon_48.png",
+    "16": "img/icon_16.png"
+  },
+  "permissions": [
+    "tabs",
+    "http://*/*",
+    "storage"
+  ],
+  "browser_action": {
+    "default_title": "Resources Updater",
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["http://*/*"],
+      "js": ["js/jquery.js", "js/resupdater.js"]
+    }
+  ]
+}
