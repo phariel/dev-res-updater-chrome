@@ -32,6 +32,7 @@ html, body {
 
 .btn-area {
     height: 20px;
+    text-align: center;
 }
 
 .btn-save {
@@ -40,7 +41,6 @@ html, body {
 }
 
 .btn-clean {
-    float: right;
     font-size: 20px;
     padding: 5px 10px;
 }
