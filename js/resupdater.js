@@ -14,7 +14,7 @@ $(function () {
 							var $this = $(this);
 							if ($this.attr('href').indexOf(sourceUrl) > -1) {
 								var baseUrl = replaceUrl.split('?')[0];
-								$this.attr('href', baseUrl + '?_=' + Date.now());
+								$this.attr('href', baseUrl);
 								sourceUrl = baseUrl;
 							}
 						});
