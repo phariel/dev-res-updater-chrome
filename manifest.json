@@ -1,12 +1,15 @@
 {
   "name": "Resources Updater",
-  "version": "0.1.0",
+  "version": "0.1.5",
   "manifest_version": 2,
   "description": "For dev",
   "icons": {
     "128": "img/icon_128.png",
     "48": "img/icon_48.png",
     "16": "img/icon_16.png"
+  },
+  "background": {
+    "scripts": ["js/bg.js"]
   },
   "permissions": [
     "tabs",
@@ -17,10 +20,16 @@
     "default_title": "Resources Updater",
     "default_popup": "popup.html"
   },
-  "content_scripts": [
-    {
-      "matches": ["http://*/*"],
-      "js": ["js/jquery.js", "js/resupdater.js"]
+  "content_scripts": [{
+    "matches": ["http://*/*"],
+    "js": ["js/jquery.js", "js/resupdater.js"]
+  }],
+  "commands": {
+    "update-res": {
+      "suggested_key": {
+        "default": "Alt+R"
+      },
+      "description": "Update resource shortcut"
     }
-  ]
+  }
 }
