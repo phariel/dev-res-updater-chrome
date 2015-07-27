@@ -9,7 +9,7 @@ $(function() {
       replaceUrl = result['replaceUrl'];
 
       if (href.indexOf(siteUrl) > -1) {
-        $('<button class="btn-res-updater" style="transition: background-color 300ms; background: #eee; border-color: #000; color: #000; cursor: pointer; position: fixed; bottom: 20px; right: 20px; font-size: 20px; padding:10px 20px;">Update</button>')
+        $('<button class="btn-res-updater" style="transition: background-color 300ms; background: #eee; border-color: #000; color: #000; cursor: pointer; position: fixed; z-index: 9999; bottom: 20px; right: 20px; font-size: 20px; padding:10px 20px;">Update</button>')
           .appendTo('body').click(updateRes);
       }
     }
